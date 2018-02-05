@@ -1,0 +1,10 @@
+{
+  "name": "HapiNext",
+  "short_name": "HapiNext",
+  "icons": [],
+  "start_url": "",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#FFF",
+  "theme_color": "#FFF"
+}

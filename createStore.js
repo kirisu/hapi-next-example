@@ -1,4 +1,4 @@
-import { createStore, compose, combineReducers } from 'redux';
+import { createStore, compose } from 'redux';
 
 import reducers from './reducers';
 
@@ -9,11 +9,6 @@ const composeEnhancers =
 
 export default (initialState = {}) => {
   return {
-    ...createStore(
-      reducers,
-      // combineReducers({ ...reducers }),
-      initialState,
-      composeEnhancers()
-    )
+    ...createStore(reducers, initialState, composeEnhancers())
   };
 };
