@@ -6,7 +6,7 @@ import createStore from '../createStore';
 
 const store = createStore();
 
-if (module.hot) {
+if (__DEV__ && module.hot) {
   module.hot.accept('../reducers', () => {
     const nextRootReducer = require('../reducers');
     store.replaceReducer(nextRootReducer);
