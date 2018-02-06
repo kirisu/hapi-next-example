@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import Application from '../layouts/application';
 
 export default () => (
   <Application>
-    <div>Home</div>
+    <Fragment>Home</Fragment>
   </Application>
 );

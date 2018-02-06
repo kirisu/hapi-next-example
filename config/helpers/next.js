@@ -7,20 +7,19 @@ const nextHandlerWrapper = app => {
     return h.close;
   };
 };
-
-const defaultHandlerWrapper = app => async ({ raw: { req, res }, url }) => {
-  const { pathname, query } = parse(url, true);
-  return app.renderToHTML(req, res, pathname, query);
-};
-
-const pathWrapper = (app, pathName, opts) => async ({ raw, query, params }) => {
+const pathWrapper = (app, pathname, opts) => async ({ raw, query, params }) => {
   return app.renderToHTML(
     raw.req,
     raw.res,
-    pathName,
+    pathname,
     { ...query, ...params },
     opts
   );
+};
+
+const defaultHandlerWrapper = app => async ({ raw, url }) => {
+  const { pathname, query } = parse(url, true);
+  return app.renderToHTML(raw.req, raw.res, pathname, query);
 };
 
 export { pathWrapper, defaultHandlerWrapper, nextHandlerWrapper };
