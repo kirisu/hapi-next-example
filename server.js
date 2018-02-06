@@ -3,11 +3,8 @@ import path from 'path';
 import Hapi from 'hapi';
 import Inert from 'inert';
 import next from 'next';
-import dotenv from 'dotenv';
 
 import routes from './config/routes';
-
-dotenv.config();
 
 const dev = process.env.NODE_ENV === 'development';
 

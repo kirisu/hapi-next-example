@@ -8,7 +8,7 @@ export default app => [
   {
     method: 'GET',
     path: '/',
-    handler: pathWrapper(app, '/home')
+    handler: pathWrapper(app, '/index')
   },
   {
     method: 'GET',
