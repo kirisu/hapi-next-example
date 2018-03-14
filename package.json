@@ -10,14 +10,14 @@
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
     "babel-jest": "^22.4.1",
     "babel-loader": "^7.1.4",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.6.1",
-    "babel-preset-react": "^6.24.1",
     "cross-env": "^5.1.4",
     "jest": "^22.4.2",
-    "webpack": "^4.1.1",
+    "webpack": "^3.11.0",
     "webpack-node-externals": "^1.6.0"
   },
   "dependencies": {
@@ -31,13 +31,8 @@
     "url": "^0.11.0"
   },
   "babel": {
-    "presets": [
-      "next/babel",
-      "env"
-    ],
-    "plugins": [
-      "transform-object-rest-spread"
-    ]
+    "presets": ["next/babel", "env"],
+    "plugins": ["transform-object-rest-spread"]
   },
   "jest": {
     "transform": {
