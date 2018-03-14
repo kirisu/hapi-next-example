@@ -1,4 +1,0 @@
-{
-  "presets": ["next/babel", "env"],
-  "plugins": ["transform-object-rest-spread"]
-}
