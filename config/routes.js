@@ -2,7 +2,7 @@ import {
   pathWrapper,
   defaultHandlerWrapper,
   nextHandlerWrapper
-} from '../helpers/next';
+} from './helpers/next';
 
 export default app => [
   {
