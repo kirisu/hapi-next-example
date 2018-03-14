@@ -1,7 +1,7 @@
-var webpack = require('webpack');
-var nodeExternals = require('webpack-node-externals');
+import webpack from 'webpack';
+import nodeExternals from 'webpack-node-externals';
 
-var config = {
+export default {
   entry: './server.js',
   output: {
     filename: './server.prod.js'
@@ -18,5 +18,3 @@ var config = {
   target: 'node',
   externals: [nodeExternals()]
 };
-
-module.exports = config;

@@ -1,6 +1,6 @@
-const webpack = require('webpack');
+import webpack from 'webpack';
 
-module.exports = {
+export default {
   distDir: 'dist',
   webpack: (config, { dev }) => {
     config.plugins.push(
