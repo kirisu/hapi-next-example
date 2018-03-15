@@ -6,9 +6,7 @@ import next from 'next';
 
 import routes from './config/routes';
 
-const dev = process.env.NODE_ENV === 'development';
-
-const app = next({ dev });
+const app = next({ dev: process.env.NODE_ENV === 'development' });
 
 const server = Hapi.server({
   host: '0.0.0.0',

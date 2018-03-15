@@ -2,9 +2,11 @@ import webpack from 'webpack';
 import nodeExternals from 'webpack-node-externals';
 
 export default {
-  entry: './server.js',
+  entry: {
+    server: './server.js'
+  },
   output: {
-    filename: './server.prod.js'
+    filename: './[name].prod.js'
   },
   module: {
     loaders: [
